@@ -47,4 +47,4 @@ For the final network metrics (approximated and actual/raw ) run this command, w
 - pipenv run python src/run_probability_distribution.py
 
 ## Datasets
-- All datasets are provided here when possible according to the size limit of github. Else, ask for a link to it and will provide it.
+- All datasets are provided here when possible according to the size limit of github or else with git-lfs in .gitattributes. Else, ask for a link to it and will provide it.
