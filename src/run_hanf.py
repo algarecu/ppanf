@@ -44,7 +44,7 @@ if G:
     hanf_stop = datetime.now()
     print ("The HyperANF balls: ", [hyper_run.nr_of_nodes_with_distance_from(v, t) for t in range(depth)])
     print ("HyperANF has reached depth of " + str(hyper_run.get_max_t()))
-    print (str(hanf_stop), str(hanf_start), "HyperANF" + str(hanf_stop - hanf_start) )
+    print (str(hanf_stop), str(hanf_start), "HyperANF: " + str(hanf_stop - hanf_start) )
 
     # Absolute errors
     hyper_run_ball_sizes = [hyper_run.nr_of_nodes_with_distance_from(v, i) for i in range(depth)]
@@ -54,7 +54,7 @@ if G:
     bfs_run = Bfs(G,depth)
     bfs_balls = bfs_run.get_balls(v)
     bfs_stop = datetime.now()
-    print(str (bfs_stop), str (bfs_start), "Bfs" + str(bfs_stop - bfs_start) )
+    print(str (bfs_stop), str (bfs_start), "Bfs: " + str(bfs_stop - bfs_start) )
     print ("The BFS balls: ", [bfs_run.number_of_nodes_at_distance_from(v, t) for t in range(depth)] )
     print ("BFS has reached depth of " + str(len(bfs_balls)) )
     # Absolute errors

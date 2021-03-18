@@ -26,7 +26,6 @@ def small_world_coefficient(G, name):
 
 	# Generate lattice graph with same amount of vertices
 	L = generate_lattice_graph (int (math.sqrt (len (G.nodes ()))))
-	small_world_coefficient
 
 	# Check how average path length of random graph R compares to G
 	l = average_path_length (R) / average_path_length (G)
@@ -36,10 +35,13 @@ def small_world_coefficient(G, name):
 	# c = nx.average_clustering (G) / float((nx.average_clustering (L)))
 	if nx.average_clustering (L) == 0:
 		c = nx.average_clustering(G)
+		print("Avg. Clustering coeff. for G/L is the coeff. of G which is " + str(c))
 		# c = average_clustering_coefficient (G)
 	else:
-		c = nx.average_clustering (G) / float (nx.average_clustering (L))
-		# c = average_clustering_coefficient (G) / average_clustering_coefficient (L)
+		c = nx.average_clustering (G) / float(nx.average_clustering (L))
+		print ("Avg. Clustering coeff. for G/L is " + str (c))
+		# c = average_clustering_coefficient (G) / float(average_clustering_coefficient (L))
+
 	print("Clustering Coefficient of G/L: " + str(c))
 
 	# Calculate coefficient
@@ -68,9 +70,11 @@ def small_world_coefficient_raw(G, name):
 	# Check how average clustering coefficient of graph compares to that of a lattice graph
 	if nx.average_clustering(L) == 0:
 		c = nx.average_clustering (G)
+		print("Avg. Clustering RAW coeff. for G/L is the coeff. of G which is " + str(c))
 		# c = average_clustering_coefficient (G)
 	else:
 		c = nx.average_clustering (G) / float (nx.average_clustering(L))
+		print ("Avg. Clustering RAW coeff. for G/L is " + str (c))
 		# c = average_clustering_coefficient (G) / average_clustering_coefficient (L)
 	print ("Clustering Coefficient of G/L: " + str (c))
 
