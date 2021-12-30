@@ -28,9 +28,9 @@ HyperANF in Python (translated by @algarecu)
   t=4
   The HyperANF balls:  [1, 338, 773, 1158]
   HyperANF has reached depth of 5
-  2021-03-11 22:05:49.715699 2021-03-11 22:05:36.070302 HyperANF0:00:13.645397
+  2021-03-11 22:05:49.715699 2021-03-11 22:05:36.070302 HyperANF 0:00:13.645397
   Starting BFS...
-  2021-03-11 22:07:31.687025 2021-03-11 22:05:49.715943 Bfs0:01:41.971082
+  2021-03-11 22:07:31.687025 2021-03-11 22:05:49.715943 Bfs 0:01:41.971082
   The BFS balls:  [1, 347, 1171, 1742]
   BFS has reached depth of 5
   The max depth in the graph is:5
